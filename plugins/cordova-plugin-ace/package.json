@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-ace",
+        "scope": null,
+        "escapedName": "cordova-plugin-ace",
+        "name": "cordova-plugin-ace",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "F:\\projects\\helloWidget\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-ace@latest",
+  "_id": "cordova-plugin-ace@0.1.2",
+  "_inCache": true,
+  "_location": "/cordova-plugin-ace",
+  "_nodeVersion": "0.12.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-ace-0.1.2.tgz_1468958435014_0.5573177423793823"
+  },
+  "_npmUser": {
+    "name": "adamnathan",
+    "email": "anathan@microsoft.com"
+  },
+  "_npmVersion": "2.7.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-ace",
+    "scope": null,
+    "escapedName": "cordova-plugin-ace",
+    "name": "cordova-plugin-ace",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ace/-/cordova-plugin-ace-0.1.2.tgz",
+  "_shasum": "dd02e85020479777a1969a6e63060ec66fdb6844",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-ace",
+  "_where": "F:\\projects\\helloWidget\\node_modules",
+  "author": {
+    "name": "Adam Nathan",
+    "email": "anathan@microsoft.com"
+  },
+  "bugs": {
+    "url": "https://github.com/microsoft/ace/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-ace",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "xcode": "0.8.3"
+  },
+  "description": "Enables you to mix native UI and native code with your JavaScript and HTML. http://microsoft.github.io/ace",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "dd02e85020479777a1969a6e63060ec66fdb6844",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-ace/-/cordova-plugin-ace-0.1.2.tgz"
+  },
+  "gitHead": "37f57c275d427e67108277d9e7b0b906047ebd43",
+  "homepage": "https://github.com/microsoft/ace",
+  "keywords": [
+    "cordova",
+    "native",
+    "ui",
+    "xaml",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "adamnathan",
+      "email": "anathan@microsoft.com"
+    }
+  ],
+  "name": "cordova-plugin-ace",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/ace.git"
+  },
+  "scripts": {},
+  "version": "0.1.2"
+}
