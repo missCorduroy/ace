@@ -1,7 +1,234 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list_widget_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:loopViews="true" />
+    android:orientation="vertical"
+    android:background="@drawable/shape_main">
+
+    <RelativeLayout
+        android:id="@+id/widget_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borders"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/bankName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/logo_small"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/bankLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/icon" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/accountWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_card"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:id="@+id/accountIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@android:color/holo_blue_bright">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:background="@android:color/holo_red_dark">
+
+
+                    <RelativeLayout
+                        android:id="@+id/accountDetailsWrapper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:background="@android:color/holo_purple">
+
+                        <TextView
+                            android:id="@+id/accountAlias"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Tekući račun sa veoma drugačkim nazivom bla bla blaaaa"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/ace_white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="end"
+                            android:layout_toEndOf="@+id/accountAlias"
+                            android:layout_toRightOf="@+id/accountAlias"
+                            android:gravity="end"
+                            android:text="1.650.323,54 KM"
+                            android:textColor="@color/ace_white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/accountDetailsSubWrapper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/accountDetailsWrapper"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:background="@android:color/holo_red_light">
+
+                        <TextView
+                            android:id="@+id/accountId"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@android:color/holo_orange_light"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="**** 9777"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/ace_white"
+                            android:textSize="10sp"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignBottom="@+id/accountBalance" />
+
+                        <TextView
+                            android:id="@+id/accountBalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:color/holo_orange_dark"
+                            android:layout_gravity="end"
+                            android:layout_toEndOf="@+id/accountId"
+                            android:layout_toRightOf="@+id/accountId"
+                            android:gravity="end"
+                            android:text="323,54 KM"
+                            android:textColor="@color/ace_white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/transactionWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/transactionHeaderWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borders_transactions"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/transactionLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:background="@android:color/holo_red_dark">
+
+                    <TextView
+                        android:id="@+id/transactionLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="Transakcije"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/ace_white"
+                        android:background="@android:color/holo_purple"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/transactionAccountId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transactionLabel"
+                        android:text="**** 9777"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/ace_white"
+                        android:background="@android:color/holo_orange_light"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
